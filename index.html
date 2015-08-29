@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--html begins-->
+<html lang="en">
+
+<!--head begins-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Calcualtor</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+	<!--head ends-->
+	
+	<!--body begins-->
+    <body>
+	<!--container begins-->
+        <div class="container">
+            <h3>Calculator</h3><br>
+			
+			<!--form begins-->
+            <form name="calculator">
+
+
+                <br>
+                <button type="button" class="btn btn-default" name="lbracket" value="(" onclick="lBracket()">(</button>
+                <button type="button" class="btn btn-default" name="rbracket" value=")" onclick="rBracket()">)</button>
+                <button type="button" class="btn btn-default" name="divide" value="/" onclick="addDivide()">/</button>
+                <button type="button" class="btn btn-default" name="multiply" value="*" onclick="addMultiply()">*</button> <br>
+                <button type="button" class="btn btn-default" name="seven" value="7" onclick="addSeven()">7</button>
+                <button type="button" class="btn btn-default" name="eight" value="8" onclick="addEight()">8</button>
+                <button type="button" class="btn btn-default" name="nine" value="9" onclick="addNine()">9</button>
+                <button type="button" class="btn btn-default" name="minus" value="-" onclick="addMinus()">-</button> <br>
+                <button type="button" class="btn btn-default" name="four" value="4" onclick="addFour()">4</button>
+                <button type="button" class="btn btn-default" name="five" value="5" onclick="addFive()">5</button>
+                <button type="button" class="btn btn-default" name="six" value="6" onclick="addSix()">6</button>
+                <button type="button" class="btn btn-default" name="plus" value="+" onclick="addPlus()">+</button> <br>
+                <button type="button" class="btn btn-default" name="one" value="1" onclick="addOne()">1</button>
+                <button type="button" class="btn btn-default" name="two" value="2" onclick="addTwo()">2</button>
+                <button type="button" class="btn btn-default" name="three" value="3" onclick="addThree()">3</button> 
+                <button type="button" class="btn btn-default" name="percent" value="%" onclick="addPercent()">%</button> <br>
+                <button type="button" class="btn btn-default" name="zero" value="0" onclick="addZero()" style="width:104px;">0</button> 	
+                <button type="button" class="btn btn-default" name="ndot" value="." onclick="addDot()" ><b>.</b></button> 
+				<button type="button" class="btn btn-default" name="equal" value="=" onclick="displayEqual()">=</button>
+
+                <br>	
+
+                <input name="display" readonly style="padding:2px 10px; width:158px;">			
+                <button type="button" class="btn btn-default" name="clear" value="c" onclick="addClear()">C</button>
+
+            </form>
+			<!--form ends-->
+        </div>
+		<!--container ends-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/calc.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+	<!--head ends-->
+</html>
+<!--html ends-->
